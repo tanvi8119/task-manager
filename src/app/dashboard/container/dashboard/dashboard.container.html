@@ -1,0 +1,8 @@
+<div class= "dashboard">
+    <div *ngIf = 'taskList'>
+        <app-task-manager [taskList]= "taskList"></app-task-manager>
+    </div>
+    <div *ngIf = 'errorMessage'>
+        {{errorMessage}}
+    </div>
+</div>
